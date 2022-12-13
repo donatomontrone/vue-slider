@@ -44,7 +44,11 @@ createApp({
         },
         clickThumb(ActualIndex){
             this.currentActive = ActualIndex;
-        }
+        },
+
+    },
+    created() {
+        autoPlay = setInterval(this.nextSlide, 3000);
     }
 }).mount('#app')
 
